@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interior Designer Lemont & Chicago | 3D Home Renderings | Space by Day Design</title>
+  <meta name="description" content="Space by Day Design offers interior design services in Lemont, IL and the Chicago metro area. See photorealistic 3D renderings of your kitchen, bathroom, basement, or living room remodel before construction begins.">
+  <link rel="canonical" href="https://www.spacebyday.com/">
+  <meta property="og:title" content="Interior Designer Lemont & Chicago | 3D Home Renderings | Space by Day Design">
+  <meta property="og:description" content="See your finished space before construction begins. Photorealistic 3D interior design renderings for homeowners and builders in the Chicago metro area.">
+  <meta property="og:type" content="website">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "InteriorDesignBusiness",
+    "name": "Space by Day Design",
+    "description": "Interior design studio specializing in photorealistic 3D renderings for homeowners and builders in the Chicago metro area.",
+    "url": "https://www.spacebyday.com",
+    "areaServed": [
+      { "@type": "City", "name": "Lemont", "containedInPlace": { "@type": "State", "name": "Illinois" } },
+      { "@type": "City", "name": "Chicago", "containedInPlace": { "@type": "State", "name": "Illinois" } }
+    ],
+    "serviceType": ["Interior Design","3D Renderings","Kitchen Design","Bathroom Design","Basement Design","Bedroom Design","Living Room Design"],
+    "priceRange": "$$"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #F6F3EE; --bg-warm: #EDE8E0; --bg-dark: #2C2A26;
+      --text: #2C2A26; --text-light: #6B6560; --text-on-dark: #F6F3EE;
+      --accent: #9B7E5E; --accent-hover: #7D6348; --accent-light: #C4AD8F;
+      --border: #D6CFC5; --white: #FFFFFF;
+      --font-d: 'Cormorant Garamond', Georgia, serif;
+      --font-b: 'DM Sans', -apple-system, sans-serif;
+      --max-w: 1200px; --sec-pad: clamp(4rem, 8vw, 7rem);
+    }
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; font-size:16px; }
+    body { font-family:var(--font-b); background:var(--bg); color:var(--text); line-height:1.7; -webkit-font-smoothing:antialiased; }
+    img { max-width:100%; height:auto; display:block; }
+    a { color:inherit; text-decoration:none; }
+    .container { max-width:var(--max-w); margin:0 auto; padding:0 clamp(1.25rem,4vw,2.5rem); }
+    .page { display:none; } .page.active { display:block; }
+
+    /* ── NAV ── */
+    nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(246,243,238,0.92); backdrop-filter:blur(16px); border-bottom:1px solid var(--border); transition:box-shadow .3s; }
+    nav.scrolled { box-shadow:0 2px 20px rgba(0,0,0,.06); }
+    .nav-inner { max-width:var(--max-w); margin:0 auto; padding:0 clamp(1.25rem,4vw,2.5rem); display:flex; align-items:center; justify-content:space-between; height:72px; }
+    .nav-brand { display:flex; align-items:center; gap:10px; font-family:var(--font-d); font-size:1.35rem; font-weight:500; letter-spacing:.02em; cursor:pointer; }
+    .nav-brand img { width:36px; height:34px; }
+    .nav-links { display:flex; align-items:center; gap:1.5rem; list-style:none; }
+    .nav-links a, .nav-links .dropdown-trigger { font-size:.78rem; font-weight:500; letter-spacing:.06em; text-transform:uppercase; color:var(--text-light); transition:color .25s; position:relative; cursor:pointer; background:none; border:none; font-family:var(--font-b); padding:0; }
+    .nav-links a::after, .nav-links .dropdown-trigger::after { content:''; position:absolute; bottom:-4px; left:0; width:0; height:1.5px; background:var(--accent); transition:width .3s; }
+    .nav-links a:hover, .nav-links .dropdown-trigger:hover { color:var(--text); }
+    .nav-links a:hover::after, .nav-links .dropdown-trigger:hover::after { width:100%; }
+    .nav-cta, .nav-links a.nav-cta { display:inline-flex; align-items:center; padding:12px 28px; background:#D63031!important; color:#FFFFFF!important; font-size:.76rem!important; font-weight:700; letter-spacing:.08em; text-transform:uppercase; border-radius:3px; transition:background .25s,transform .2s; box-shadow:0 3px 12px rgba(214,48,49,.30); }
+    .nav-cta:hover, .nav-links a.nav-cta:hover { background:#B71C1C!important; transform:translateY(-1px); box-shadow:0 4px 16px rgba(214,48,49,.4); color:#FFFFFF!important; }
+    .nav-cta::after { display:none!important; }
+
+    /* Dropdown */
+    .dropdown { position:relative; }
+    .dropdown-trigger svg { width:10px; height:10px; margin-left:3px; vertical-align:middle; }
+    .dropdown-menu { position:absolute; top:calc(100% + 12px); left:-12px; background:var(--white); border:1px solid var(--border); border-radius:4px; padding:8px 0; min-width:220px; opacity:0; visibility:hidden; transform:translateY(-6px); transition:all .25s; box-shadow:0 8px 30px rgba(0,0,0,.08); z-index:200; }
+    .dropdown:hover .dropdown-menu { opacity:1; visibility:visible; transform:translateY(0); }
+    .dropdown-menu a { display:block; padding:8px 20px; font-size:.8rem!important; letter-spacing:.04em!important; white-space:nowrap; }
+    .dropdown-menu a::after { display:none!important; }
+    .dropdown-menu a:hover { background:var(--bg); color:var(--accent); }
+
+    .mobile-toggle { display:none; background:none; border:none; cursor:pointer; padding:8px; }
+    .mobile-toggle span { display:block; width:22px; height:2px; background:var(--text); margin:5px 0; transition:.3s; }
+
+    /* ── HERO ── */
+    .hero { position:relative; min-height:88vh; display:flex; align-items:flex-end; overflow:hidden; margin-top:72px; }
+    .hero-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 40%; }
+    .hero-overlay { position:absolute; inset:0; background:linear-gradient(180deg,rgba(44,42,38,.08) 0%,rgba(44,42,38,.55) 60%,rgba(44,42,38,.82) 100%); }
+    .hero-content { position:relative; z-index:2; padding:0 clamp(1.25rem,4vw,2.5rem) clamp(3rem,6vw,5rem); max-width:var(--max-w); margin:0 auto; width:100%; }
+    .hero-tag { display:inline-block; font-size:.7rem; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:var(--accent-light); margin-bottom:1rem; padding:6px 14px; border:1px solid rgba(196,173,143,.4); border-radius:2px; }
+    .hero h1 { font-family:var(--font-d); font-weight:300; font-size:clamp(2.4rem,5vw,3.8rem); line-height:1.12; color:var(--text-on-dark); max-width:680px; margin-bottom:1.25rem; }
+    .hero h1 em { font-style:italic; font-weight:400; color:var(--accent-light); }
+    .hero-sub { font-size:1.02rem; color:rgba(246,243,238,.78); max-width:520px; margin-bottom:2rem; line-height:1.7; }
+    .hero-btns { display:flex; gap:1rem; flex-wrap:wrap; }
+
+    /* ── BTNS ── */
+    .btn-primary { display:inline-flex; align-items:center; gap:8px; padding:14px 32px; background:var(--accent); color:var(--white); font-family:var(--font-b); font-size:.82rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; border-radius:2px; border:none; cursor:pointer; transition:background .25s,transform .2s; }
+    .btn-primary:hover { background:var(--accent-hover); transform:translateY(-1px); }
+    .btn-outline { display:inline-flex; align-items:center; gap:8px; padding:14px 32px; background:transparent; color:var(--text-on-dark); font-family:var(--font-b); font-size:.82rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; border-radius:2px; border:1.5px solid rgba(246,243,238,.4); cursor:pointer; transition:border-color .25s,background .25s; }
+    .btn-outline:hover { border-color:var(--text-on-dark); background:rgba(246,243,238,.06); }
+    .btn-outline-dark { display:inline-flex; align-items:center; gap:8px; padding:13px 30px; background:transparent; color:var(--text); font-family:var(--font-b); font-size:.82rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; border-radius:2px; border:1.5px solid var(--border); cursor:pointer; transition:all .25s; }
+    .btn-outline-dark:hover { border-color:var(--accent); color:var(--accent); }
+
+    /* ── SECTION UTILITIES ── */
+    section { padding:var(--sec-pad) 0; }
+    .section-tag { display:inline-block; font-size:.7rem; font-weight:600; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); margin-bottom:1rem; }
+    .section-title { font-family:var(--font-d); font-weight:400; font-size:clamp(2rem,3.8vw,2.8rem); line-height:1.2; margin-bottom:1rem; }
+    .section-subtitle { font-size:1rem; color:var(--text-light); max-width:560px; line-height:1.7; }
+    .text-center { text-align:center; }
+    .mx-auto { margin-left:auto; margin-right:auto; }
+
+    /* ── TRUST BAR ── */
+    .trust-bar { background:var(--bg-dark); padding:1.5rem 0; }
+    .trust-inner { max-width:var(--max-w); margin:0 auto; padding:0 clamp(1.25rem,4vw,2.5rem); display:flex; justify-content:center; gap:clamp(2rem,5vw,4rem); flex-wrap:wrap; text-align:center; }
+    .trust-item { font-size:.78rem; font-weight:500; letter-spacing:.1em; text-transform:uppercase; color:rgba(246,243,238,.55); }
+
+    /* ── PROCESS CARDS ── */
+    .process-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; margin-top:3rem; }
+    .process-card { padding:2.5rem 2rem; background:var(--white); border:1px solid var(--border); border-radius:4px; text-align:center; transition:transform .3s,box-shadow .3s; }
+    .process-card:hover { transform:translateY(-4px); box-shadow:0 12px 40px rgba(0,0,0,.06); }
+    .process-icon { width:48px; height:48px; margin:0 auto 1.25rem; display:flex; align-items:center; justify-content:center; background:var(--bg); border-radius:50%; }
+    .process-icon img { width:24px; height:24px; }
+    .process-step { font-size:.68rem; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin-bottom:.6rem; }
+    .process-card h3 { font-family:var(--font-d); font-size:1.35rem; font-weight:500; margin-bottom:.75rem; }
+    .process-card p { font-size:.92rem; color:var(--text-light); line-height:1.65; }
+
+    /* ── SERVICE CARDS ── */
+    .services-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem; margin-top:3rem; }
+    .service-card { padding:2rem 1.5rem; border:1px solid var(--border); border-radius:4px; text-align:center; transition:border-color .3s,transform .3s; background:var(--white); }
+    .service-card:hover { border-color:var(--accent); transform:translateY(-3px); }
+    .service-icon { width:40px; height:40px; margin:0 auto 1rem; }
+    .service-card h3 { font-family:var(--font-d); font-size:1.15rem; font-weight:500; margin-bottom:.6rem; }
+    .service-card p { font-size:.88rem; color:var(--text-light); line-height:1.6; }
+
+    /* ── AUDIENCE CARDS ── */
+    .audience-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:2rem; margin-top:3rem; }
+    .audience-card { overflow:hidden; border-radius:4px; background:var(--white); border:1px solid var(--border); transition:transform .3s,box-shadow .3s; }
+    .audience-card:hover { transform:translateY(-4px); box-shadow:0 16px 48px rgba(0,0,0,.07); }
+    .audience-img { width:100%; height:220px; object-fit:cover; }
+    .audience-body { padding:2rem; }
+    .audience-body h3 { font-family:var(--font-d); font-size:1.5rem; font-weight:500; margin-bottom:.75rem; }
+    .audience-body p { font-size:.92rem; color:var(--text-light); line-height:1.7; margin-bottom:1.25rem; }
+
+    /* ── LINK ARROW ── */
+    .link-arrow { display:inline-flex; align-items:center; gap:6px; font-size:.82rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); transition:gap .25s; cursor:pointer; }
+    .link-arrow:hover { gap:10px; }
+    .link-arrow svg { width:14px; height:14px; }
+    .arrow-svg { fill:none; stroke:currentColor; stroke-width:2; }
+
+    /* ── ABOUT ── */
+    .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:clamp(2rem,5vw,4rem); align-items:center; }
+    .about-img { width:100%; border-radius:4px; aspect-ratio:4/4.4; object-fit:cover; }
+    .about-text p { font-size:.95rem; color:var(--text-light); line-height:1.75; margin-bottom:1rem; }
+    .about-values { display:flex; flex-wrap:wrap; gap:.6rem; margin:1.5rem 0; }
+    .about-values span { padding:6px 16px; font-size:.78rem; font-weight:500; letter-spacing:.06em; text-transform:uppercase; border:1px solid var(--border); border-radius:2px; color:var(--text-light); }
+
+    /* ── DELIVERABLES ── */
+    .deliver-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; max-width:900px; margin:2.5rem auto 0; }
+    .deliver-item { display:flex; align-items:center; gap:10px; padding:1rem 1.25rem; background:var(--white); border-radius:4px; font-size:.9rem; }
+    .deliver-check { color:var(--accent); font-size:1rem; flex-shrink:0; }
+
+    /* ── PROJECT PILLS ── */
+    .project-pills { display:flex; flex-wrap:wrap; justify-content:center; gap:.75rem; margin-top:2rem; }
+    .project-pills a { padding:10px 24px; border:1px solid rgba(246,243,238,.2); border-radius:2px; font-size:.82rem; font-weight:500; letter-spacing:.06em; text-transform:uppercase; color:rgba(246,243,238,.7); transition:all .25s; cursor:pointer; }
+    .project-pills a:hover { border-color:var(--accent-light); color:var(--accent-light); background:rgba(155,126,94,.08); }
+
+    /* ── CTA SECTION ── */
+    .cta-section { background:var(--bg); padding:var(--sec-pad) 0; text-align:center; }
+    .cta-dark { background:var(--bg-dark); color:var(--text-on-dark); }
+    .cta-dark .section-tag { color:var(--accent-light); }
+    .cta-dark .section-title { color:var(--text-on-dark); }
+    .cta-dark .section-subtitle { color:rgba(246,243,238,.6); }
+
+    /* ── FOOTER ── */
+    footer { background:var(--bg-dark); color:rgba(246,243,238,.5); padding:3rem 0 2rem; }
+    .footer-inner { max-width:var(--max-w); margin:0 auto; padding:0 clamp(1.25rem,4vw,2.5rem); display:flex; justify-content:space-between; align-items:start; flex-wrap:wrap; gap:2rem; }
+    .footer-brand { font-family:var(--font-d); font-size:1.2rem; font-weight:500; color:var(--text-on-dark); margin-bottom:.5rem; }
+    .footer-desc { font-size:.85rem; max-width:340px; line-height:1.6; }
+    .footer-links { display:flex; gap:3rem; }
+    .footer-col h4 { font-size:.72rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:rgba(246,243,238,.7); margin-bottom:.75rem; }
+    .footer-col ul { list-style:none; }
+    .footer-col li { margin-bottom:.4rem; }
+    .footer-col a { font-size:.88rem; transition:color .25s; cursor:pointer; }
+    .footer-col a:hover { color:var(--accent-light); }
+    .footer-bottom { max-width:var(--max-w); margin:2rem auto 0; padding:1.5rem clamp(1.25rem,4vw,2.5rem) 0; border-top:1px solid rgba(246,243,238,.08); font-size:.78rem; text-align:center; }
+
+    /* ══════ SERVICE PAGE STYLES ══════ */
+    .svc-hero { margin-top:72px; position:relative; padding:clamp(4rem,8vw,6rem) 0; overflow:hidden; }
+    .svc-hero-bg { position:absolute; inset:0; }
+    .svc-hero-bg img { width:100%; height:100%; object-fit:cover; }
+    .svc-hero-bg::after { content:''; position:absolute; inset:0; background:linear-gradient(135deg,rgba(44,42,38,.82) 0%,rgba(44,42,38,.6) 100%); }
+    .svc-hero-content { position:relative; z-index:2; max-width:var(--max-w); margin:0 auto; padding:0 clamp(1.25rem,4vw,2.5rem); }
+    .svc-hero h1 { font-family:var(--font-d); font-weight:300; font-size:clamp(2.2rem,4.5vw,3.4rem); line-height:1.15; color:var(--text-on-dark); max-width:640px; margin-bottom:1.25rem; }
+    .svc-hero h1 em { font-style:italic; color:var(--accent-light); font-weight:400; }
+    .svc-hero p { font-size:1.02rem; color:rgba(246,243,238,.78); max-width:520px; margin-bottom:2rem; line-height:1.7; }
+    .svc-breadcrumb { font-size:.75rem; letter-spacing:.08em; text-transform:uppercase; color:rgba(246,243,238,.5); margin-bottom:1.5rem; }
+    .svc-breadcrumb a { color:var(--accent-light); cursor:pointer; }
+
+    /* Service body content */
+    .svc-content { padding:var(--sec-pad) 0; }
+    .svc-content-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:clamp(2rem,5vw,4rem); align-items:start; }
+    .svc-content-text h2 { font-family:var(--font-d); font-size:clamp(1.6rem,3vw,2.2rem); font-weight:400; margin-bottom:1rem; line-height:1.25; }
+    .svc-content-text p { font-size:.95rem; color:var(--text-light); line-height:1.75; margin-bottom:1rem; }
+    .svc-content-text strong { color:var(--text); }
+    .svc-sidebar-img { width:100%; border-radius:4px; object-fit:cover; }
+
+    /* What's included list */
+    .svc-includes { background:var(--white); padding:var(--sec-pad) 0; }
+    .includes-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; margin-top:2.5rem; }
+    .include-item { display:flex; align-items:flex-start; gap:12px; padding:1.25rem; border:1px solid var(--border); border-radius:4px; transition:border-color .25s; }
+    .include-item:hover { border-color:var(--accent); }
+    .include-icon { flex-shrink:0; width:28px; height:28px; background:var(--bg); border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--accent); font-size:.85rem; font-weight:700; }
+    .include-item h4 { font-family:var(--font-d); font-size:1.05rem; font-weight:500; margin-bottom:.25rem; }
+    .include-item p { font-size:.84rem; color:var(--text-light); line-height:1.55; }
+
+    /* ══════ PORTFOLIO STYLES ══════ */
+    .portfolio-filter { display:flex; justify-content:center; gap:.75rem; flex-wrap:wrap; margin:2.5rem 0; }
+    .filter-btn { padding:9px 22px; border:1px solid var(--border); border-radius:2px; background:transparent; font-family:var(--font-b); font-size:.8rem; font-weight:500; letter-spacing:.06em; text-transform:uppercase; color:var(--text-light); cursor:pointer; transition:all .25s; }
+    .filter-btn:hover, .filter-btn.active { background:var(--accent); color:var(--white); border-color:var(--accent); }
+
+    .portfolio-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; }
+    .portfolio-item { position:relative; border-radius:4px; overflow:hidden; cursor:pointer; aspect-ratio:16/11; }
+    .portfolio-item img { width:100%; height:100%; object-fit:cover; transition:transform .5s; }
+    .portfolio-item:hover img { transform:scale(1.04); }
+    .portfolio-item-overlay { position:absolute; inset:0; background:linear-gradient(180deg,transparent 40%,rgba(44,42,38,.7) 100%); opacity:0; transition:opacity .35s; display:flex; align-items:flex-end; padding:1.25rem; }
+    .portfolio-item:hover .portfolio-item-overlay { opacity:1; }
+    .portfolio-item-label { color:var(--white); }
+    .portfolio-item-label h4 { font-family:var(--font-d); font-size:1.1rem; font-weight:500; }
+    .portfolio-item-label span { font-size:.75rem; letter-spacing:.08em; text-transform:uppercase; color:var(--accent-light); }
+
+    /* ══════ BUILDERS PAGE ══════ */
+    .builder-values-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem; margin-top:2.5rem; }
+    .builder-value { text-align:center; padding:2rem 1.25rem; border:1px solid var(--border); border-radius:4px; background:var(--white); transition:transform .3s; }
+    .builder-value:hover { transform:translateY(-3px); }
+    .builder-value-icon { width:40px; height:40px; margin:0 auto .75rem; }
+    .builder-value h3 { font-family:var(--font-d); font-size:1.1rem; font-weight:500; margin-bottom:.5rem; }
+    .builder-value p { font-size:.88rem; color:var(--text-light); line-height:1.6; }
+
+    .builder-process { display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem; margin-top:2.5rem; }
+    .bp-step { text-align:center; padding:1.5rem 1rem; }
+    .bp-num { display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; border-radius:50%; background:var(--accent); color:var(--white); font-family:var(--font-d); font-size:1.1rem; font-weight:600; margin-bottom:.75rem; }
+    .bp-step h4 { font-family:var(--font-d); font-size:1.1rem; font-weight:500; margin-bottom:.4rem; }
+    .bp-step p { font-size:.88rem; color:var(--text-light); line-height:1.6; }
+
+    .builder-split { display:grid; grid-template-columns:1fr 1fr; gap:clamp(2rem,5vw,4rem); align-items:center; margin-top:3rem; }
+    .builder-split img { width:100%; border-radius:4px; }
+
+    .spec-preview { padding:1.5rem; background:var(--bg); border-radius:4px; border:1px solid var(--border); }
+    .spec-preview h4 { font-family:var(--font-d); font-size:1.1rem; font-weight:500; margin-bottom:1rem; color:var(--accent); }
+    .spec-row { display:flex; justify-content:space-between; padding:.5rem 0; border-bottom:1px solid var(--border); font-size:.88rem; }
+    .spec-row:last-child { border-bottom:none; }
+    .spec-label { font-weight:600; color:var(--text); }
+    .spec-val { color:var(--text-light); }
+
+    .perfect-for { display:flex; flex-wrap:wrap; gap:.75rem; margin-top:1.5rem; }
+    .perfect-for span { padding:8px 18px; border:1px solid var(--border); border-radius:2px; font-size:.82rem; font-weight:500; letter-spacing:.04em; text-transform:uppercase; color:var(--text-light); }
+
+    /* ── ANIMATIONS ── */
+    .fade-up { opacity:0; transform:translateY(28px); transition:opacity .7s ease,transform .7s ease; }
+    .fade-up.visible { opacity:1; transform:translateY(0); }
+
+    /* ── LIGHTBOX ── */
+    .lightbox { position:fixed; inset:0; z-index:500; background:rgba(44,42,38,.92); display:none; align-items:center; justify-content:center; padding:2rem; backdrop-filter:blur(8px); }
+    .lightbox.open { display:flex; }
+    .lightbox img { max-width:90vw; max-height:85vh; border-radius:4px; object-fit:contain; }
+    .lightbox-close { position:absolute; top:1.5rem; right:2rem; background:none; border:none; color:var(--white); font-size:2rem; cursor:pointer; line-height:1; }
+    .lightbox-nav { position:absolute; top:50%; transform:translateY(-50%); background:rgba(246,243,238,.12); border:none; color:var(--white); font-size:1.5rem; padding:12px 16px; cursor:pointer; border-radius:4px; transition:background .25s; }
+    .lightbox-nav:hover { background:rgba(246,243,238,.2); }
+    .lightbox-prev { left:1.5rem; }
+    .lightbox-next { right:1.5rem; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width:900px) {
+      .nav-links { display:none; }
+      .mobile-toggle { display:block; }
+      .nav-links.open { display:flex; flex-direction:column; position:absolute; top:72px; left:0; right:0; background:var(--bg); padding:1.5rem 2rem; border-bottom:1px solid var(--border); gap:1.25rem; z-index:200; }
+      .dropdown-menu { position:static; opacity:1; visibility:visible; transform:none; box-shadow:none; border:none; padding:0 0 0 1rem; min-width:auto; background:transparent; }
+      .process-grid, .includes-grid { grid-template-columns:1fr; }
+      .services-grid, .builder-values-grid, .builder-process { grid-template-columns:repeat(2,1fr); }
+      .audience-grid { grid-template-columns:1fr; }
+      .about-grid, .svc-content-grid, .builder-split { grid-template-columns:1fr; }
+      .about-img, .svc-sidebar-img { order:-1; aspect-ratio:16/10; }
+      .deliver-grid { grid-template-columns:1fr 1fr; }
+      .portfolio-grid { grid-template-columns:repeat(2,1fr); }
+    }
+    @media (max-width:600px) {
+      .services-grid, .builder-values-grid, .builder-process { grid-template-columns:1fr; }
+      .deliver-grid, .includes-grid { grid-template-columns:1fr; }
+      .portfolio-grid { grid-template-columns:1fr; }
+      .footer-links { flex-direction:column; gap:1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════ NAV ═══════════ -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a class="nav-brand" onclick="showPage('home')" aria-label="Space by Day Design Home">
+      <img src="https://static.wixstatic.com/media/77d198_bc7dc8dd7fd24f80ac5a0b7dd0573ad4~mv2.png/v1/fill/w_42,h_40,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/image%20(2)%20no%20background_PNG.png" alt="Space by Day Design logo – Interior Designer Lemont Chicago IL" width="36" height="34">
+      Space by Day Design
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a onclick="showPage('home')">Home</a></li>
+      <li class="dropdown">
+        <button class="dropdown-trigger" aria-haspopup="true">Services <svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+        <div class="dropdown-menu" role="menu">
+          <a onclick="showPage('kitchen')" role="menuitem">Kitchen Remodel Design</a>
+          <a onclick="showPage('bathroom')" role="menuitem">Bathroom Renovation Design</a>
+          <a onclick="showPage('basement')" role="menuitem">Basement Finishing Design</a>
+          <a onclick="showPage('bedroom')" role="menuitem">Bedroom Interior Design</a>
+          <a onclick="showPage('livingroom')" role="menuitem">Living Room Design</a>
+        </div>
+      </li>
+      <li><a onclick="showPage('builders')">For Builders</a></li>
+      <li><a onclick="showPage('portfolio')">Portfolio</a></li>
+      <li><a onclick="showPage('home');setTimeout(()=>document.getElementById('about').scrollIntoView({behavior:'smooth'}),100)">About</a></li>
+      <li><a onclick="showPage('home');setTimeout(()=>document.getElementById('contact').scrollIntoView({behavior:'smooth'}),100)" class="nav-cta">Book Consultation</a></li>
+    </ul>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- ═══════════ HOME PAGE ═══════════ -->
+<!-- ═══════════════════════════════════════ -->
+<div class="page active" id="page-home">
+  <header class="hero">
+    <img class="hero-img" src="https://static.wixstatic.com/media/77d198_0cf4666ee72e42928a744ff68046904c~mv2.jpg/v1/fill/w_1600,h_900,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/77d198_0cf4666ee72e42928a744ff68046904c~mv2.jpg" alt="Modern kitchen interior design rendering – photorealistic 3D visualization of a kitchen remodel in Chicago" width="1600" height="900" loading="eager">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-tag">Interior Design · Lemont, IL · Chicago Metro</span>
+      <h1>See Your Finished Space <em>Before</em> Construction Begins</h1>
+      <p class="hero-sub">Photorealistic 3D interior design renderings for homeowners and builders across the Chicago metro area. Make confident remodeling decisions.</p>
+      <div class="hero-btns">
+        <a onclick="showPage('home');setTimeout(()=>document.getElementById('contact').scrollIntoView({behavior:'smooth'}),100)" class="btn-primary">Schedule a Free Consultation →</a>
+        <a onclick="showPage('home');setTimeout(()=>document.getElementById('process').scrollIntoView({behavior:'smooth'}),100)" class="btn-outline">How It Works</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="trust-bar">
+    <div class="trust-inner">
+      <span class="trust-item">Serving Lemont, IL & Chicago Suburbs</span>
+      <span class="trust-item">Photorealistic 3D Renderings</span>
+      <span class="trust-item">We Design for You, Not the Builder</span>
+      <span class="trust-item">Complete Build-Ready Packages</span>
+    </div>
+  </div>
+
+  <!-- Process -->
+  <section id="process" style="background:var(--bg)">
+    <div class="container text-center fade-up">
+      <span class="section-tag">Our Interior Design Process</span>
+      <h2 class="section-title">Simple, Transparent & Focused on Clarity</h2>
+      <p class="section-subtitle mx-auto">From first conversation to final build package, every step eliminates guesswork from your home renovation.</p>
+    </div>
+    <div class="container">
+      <div class="process-grid">
+        <article class="process-card fade-up">
+          <div class="process-icon"><img src="https://static.wixstatic.com/media/77d198_9d4acd67a37940ffb245a529a87a2b44~mv2.png/v1/fill/w_43,h_43,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ear.png" alt="Interior design consultation listen icon" width="24" height="24"></div>
+          <span class="process-step">Step 01</span><h3>We Listen</h3>
+          <p>Every project starts with understanding your lifestyle, needs, and vision for your home renovation.</p>
+        </article>
+        <article class="process-card fade-up" style="transition-delay:.1s">
+          <div class="process-icon"><img src="https://static.wixstatic.com/media/77d198_35083f06157e451dad9647fdef981cdf~mv2.png/v1/fill/w_43,h_43,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/pencil-scale.png" alt="Interior design plan icon" width="24" height="24"></div>
+          <span class="process-step">Step 02</span><h3>We Design</h3>
+          <p>We translate your ideas into a cohesive, buildable interior design plan that maximizes your remodeling budget.</p>
+        </article>
+        <article class="process-card fade-up" style="transition-delay:.2s">
+          <div class="process-icon"><img src="https://static.wixstatic.com/media/77d198_d56de08236704b228a7a632e53f5d6fa~mv2.png/v1/fill/w_43,h_43,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/view.png" alt="3D rendering visualization icon" width="24" height="24"></div>
+          <span class="process-step">Step 03</span><h3>We Visualize</h3>
+          <p>See your remodel in photorealistic 3D renderings — before a single wall is touched. No surprises on build day.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section style="background:var(--white)">
+    <div class="container text-center fade-up">
+      <span class="section-tag">Interior Design Services</span>
+      <h2 class="section-title">Everything You Need to Build with Confidence</h2>
+      <p class="section-subtitle mx-auto">Complete residential interior design services in the Chicago metro area.</p>
+    </div>
+    <div class="container">
+      <div class="services-grid">
+        <article class="service-card fade-up">
+          <img class="service-icon" src="https://static.wixstatic.com/media/77d198_af2fd26dfcd040949d8c6efcec4106e6~mv2.png/v1/fill/w_43,h_43,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/text-bubble.png" alt="Design consultation icon" width="40" height="40">
+          <h3>Consultation</h3><p>Expert guidance to define your project scope, style, and remodeling priorities.</p>
+        </article>
+        <article class="service-card fade-up" style="transition-delay:.08s">
+          <img class="service-icon" src="https://static.wixstatic.com/media/77d198_d56de08236704b228a7a632e53f5d6fa~mv2.png/v1/fill/w_43,h_43,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/view.png" alt="3D rendering icon" width="40" height="40">
+          <h3>3D Renderings</h3><p>High-resolution, photorealistic 3D visuals of your space from multiple angles.</p>
+        </article>
+        <article class="service-card fade-up" style="transition-delay:.16s">
+          <img class="service-icon" src="https://static.wixstatic.com/media/77d198_b2ec35f5bb4c4a7b81cbdd62616c81de~mv2.png/v1/fill/w_43,h_43,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/google-docs.png" alt="Material specifications icon" width="40" height="40">
+          <h3>Material Specs</h3><p>Detailed specifications for every material, fixture, and finish — a complete build-ready package.</p>
+        </article>
+        <article class="service-card fade-up" style="transition-delay:.24s">
+          <img class="service-icon" src="https://static.wixstatic.com/media/77d198_a5d389b6ce744fdf910fc7a13df2dfe9~mv2.png/v1/fill/w_43,h_43,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/life-vest.png" alt="Construction support icon" width="40" height="40">
+          <h3>Support</h3><p>Ongoing design guidance throughout your renovation to ensure accuracy and fewer change orders.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who We Serve -->
+  <section style="background:var(--bg)">
+    <div class="container text-center fade-up">
+      <span class="section-tag">Who We Serve</span>
+      <h2 class="section-title">Interior Design for Homeowners & Builders</h2>
+      <p class="section-subtitle mx-auto">Whether planning a kitchen remodel or managing a multi-home build, we help you see the result before committing.</p>
+    </div>
+    <div class="container">
+      <div class="audience-grid">
+        <article class="audience-card fade-up">
+          <img class="audience-img" src="https://static.wixstatic.com/media/77d198_c2e84a313074440181df23baa39add18~mv2.jpg/v1/fill/w_800,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/bedroom%20page%201_edited.jpg" alt="Modern bedroom interior design rendering – Chicago suburbs" width="800" height="400" loading="lazy">
+          <div class="audience-body">
+            <h3>For Homeowners</h3>
+            <p>See your finished kitchen, bathroom, bedroom, basement, or living room before spending a dollar on construction. Our photorealistic 3D renderings eliminate the uncertainty of remodeling.</p>
+            <span class="link-arrow" onclick="showPage('kitchen')">Explore Services <svg viewBox="0 0 24 24" class="arrow-svg"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </article>
+        <article class="audience-card fade-up" style="transition-delay:.1s">
+          <img class="audience-img" src="https://static.wixstatic.com/media/77d198_28e2a1b97e6242c9829764c6c260f082~mv2.jpg/v1/fill/w_800,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/builders%20page%20one_edited.jpg" alt="Builder interior design rendering – photorealistic home visualization" width="800" height="400" loading="lazy">
+          <div class="audience-body">
+            <h3>For Builders & Contractors</h3>
+            <p>Close more projects with clear, photorealistic designs. Reduce costly change orders and help clients say "yes" faster in the competitive Chicago market.</p>
+            <span class="link-arrow" onclick="showPage('builders')">Builder Partnership <svg viewBox="0 0 24 24" class="arrow-svg"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section style="background:var(--white)" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <img class="about-img fade-up" src="https://static.wixstatic.com/media/77d198_4a2b67a134fc4ed6ab4877bd14ce03f5~mv2.jpg/v1/fill/w_596,h_656,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/dsfasdfadsfw%20aedsfvdsf%20fdsg%20s.jpg" alt="Space by Day Design team – interior designers in Lemont IL" width="596" height="656" loading="lazy">
+        <div class="about-text fade-up">
+          <span class="section-tag">About Space by Day Design</span>
+          <h2 class="section-title">Great Spaces Come from Listening</h2>
+          <p>We're a passionate interior design studio based in <strong>Lemont, Illinois</strong> — serving homeowners and builders across the <strong>Chicago metro area</strong>. Our value is translating vague ideas into concrete, photorealistic visuals.</p>
+          <p>We bridge the gap between "I want it to look nice" and "Here is exactly what to build."</p>
+          <div class="about-values">
+            <span>Detail</span><span>Light</span><span>Functionality</span><span>Clarity</span><span>Texture</span><span>Flow</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deliverables -->
+  <section style="background:var(--bg-warm)">
+    <div class="container text-center fade-up">
+      <span class="section-tag">Your Build-Ready Package</span>
+      <h2 class="section-title">What You Receive</h2>
+      <p class="section-subtitle mx-auto">A complete interior design package that gives your contractor everything needed to build exactly what you've approved.</p>
+    </div>
+    <div class="container">
+      <div class="deliver-grid fade-up">
+        <div class="deliver-item"><span class="deliver-check">✓</span> Photorealistic 3D renderings</div>
+        <div class="deliver-item"><span class="deliver-check">✓</span> Cabinet specifications</div>
+        <div class="deliver-item"><span class="deliver-check">✓</span> Hardware selections</div>
+        <div class="deliver-item"><span class="deliver-check">✓</span> Paint color schedules</div>
+        <div class="deliver-item"><span class="deliver-check">✓</span> Flooring & tile specs</div>
+        <div class="deliver-item"><span class="deliver-check">✓</span> Lighting fixture plans</div>
+        <div class="deliver-item"><span class="deliver-check">✓</span> Appliance selections</div>
+        <div class="deliver-item"><span class="deliver-check">✓</span> Door & fixture details</div>
+        <div class="deliver-item"><span class="deliver-check">✓</span> Clear layouts & design intent</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Types -->
+  <section style="background:var(--bg-dark); padding:clamp(3rem,5vw,4.5rem) 0;">
+    <div class="container text-center">
+      <span class="section-tag" style="color:var(--accent-light)">Rooms We Design</span>
+      <h2 class="section-title" style="color:var(--text-on-dark)">Explore Our Interior Design Services</h2>
+      <div class="project-pills">
+        <a onclick="showPage('kitchen')">Kitchen Remodel</a>
+        <a onclick="showPage('bathroom')">Bathroom Renovation</a>
+        <a onclick="showPage('basement')">Basement Finishing</a>
+        <a onclick="showPage('bedroom')">Bedroom Design</a>
+        <a onclick="showPage('livingroom')">Living Room Design</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="contact">
+    <div class="container fade-up">
+      <span class="section-tag">Ready to Start Your Remodel?</span>
+      <h2 class="section-title">Let's Bring Clarity to Your Home Renovation</h2>
+      <p class="section-subtitle mx-auto" style="margin-bottom:2rem">Whether you're planning a kitchen remodel, bathroom update, or whole-home renovation in the Chicago area — book a free design consultation.</p>
+      <a href="https://www.spacebyday.com/contact" class="btn-primary">Schedule a Free Design Consultation →</a>
+    </div>
+  </section>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- ═══════════ INDIVIDUAL SERVICE PAGES ═══════════ -->
+<!-- ═══════════════════════════════════════════════════════ -->
+
+<!-- ── KITCHEN ── -->
+<div class="page" id="page-kitchen">
+  <div class="svc-hero">
+    <div class="svc-hero-bg"><img src="https://static.wixstatic.com/media/77d198_ac7b04b63e8e40ed97bdc8e5deb34b5a~mv2.jpg/v1/fit/w_1200,h_600,q_90,enc_avif,quality_auto/77d198_ac7b04b63e8e40ed97bdc8e5deb34b5a~mv2.jpg" alt="Modern kitchen remodel rendering – white cabinetry with butcher block countertops in Chicago home" width="1200" height="600"></div>
+    <div class="svc-hero-content">
+      <div class="svc-breadcrumb"><a onclick="showPage('home')">Home</a> / <a onclick="showPage('home')">Services</a> / Kitchen Remodel Design</div>
+      <h1>Kitchen Remodel Design &amp; <em>3D Visualization</em> in Chicago</h1>
+      <p>See your dream kitchen in photorealistic detail before tearing out a single cabinet. We design kitchen remodels for homeowners across Lemont, IL and the Chicago suburbs — and deliver a complete build-ready package to your contractor.</p>
+      <a href="https://www.spacebyday.com/contact" class="btn-primary">Book a Kitchen Design Consultation →</a>
+    </div>
+  </div>
+  <section class="svc-content" style="background:var(--white)">
+    <div class="container">
+      <div class="svc-content-grid">
+        <div class="svc-content-text">
+          <span class="section-tag">Kitchen Interior Design – Chicago Metro</span>
+          <h2>Why Homeowners in Chicago Trust Us with Their Kitchen Remodel</h2>
+          <p>A kitchen remodel is one of the largest investments you'll make in your home. The average kitchen renovation in the <strong>Chicago metro area</strong> ranges from $30,000 to $80,000+ — and the most expensive mistakes happen when homeowners can't clearly picture the finished result before construction begins.</p>
+          <p>At Space by Day Design, we eliminate that uncertainty. Our <strong>photorealistic 3D kitchen renderings</strong> let you see every detail — cabinet style, countertop material, backsplash pattern, lighting placement, and appliance layout — before your contractor swings a hammer.</p>
+          <p>Whether you're redesigning a galley kitchen, opening up a floor plan for an open-concept layout, or upgrading to a chef's kitchen with an island, we create a detailed interior design plan and visualization package that removes guesswork and prevents costly change orders.</p>
+          <h2>What's Included in Your Kitchen Design Package</h2>
+          <p>You receive everything your builder needs to price and construct your kitchen remodel with precision — no ambiguity, no back-and-forth.</p>
+        </div>
+        <div>
+          <img class="svc-sidebar-img" src="https://static.wixstatic.com/media/77d198_da7cd9eeb2a643d3bb4fdef0685b2257~mv2.jpg/v1/fit/w_800,h_500,q_90,enc_avif,quality_auto/77d198_da7cd9eeb2a643d3bb4fdef0685b2257~mv2.jpg" alt="Kitchen interior design 3D rendering – modern open-concept kitchen remodel visualization" width="800" height="500" loading="lazy" style="margin-bottom:1.5rem; border-radius:4px;">
+          <img class="svc-sidebar-img" src="https://static.wixstatic.com/media/77d198_326904e630a441c5973e0e0c680269d6~mv2.png/v1/fill/w_624,h_384,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/kitchen%20for%20website.png" alt="Kitchen design rendering with white shaker cabinets and walnut butcher block countertop" width="624" height="384" loading="lazy" style="border-radius:4px;">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="svc-includes">
+    <div class="container">
+      <div class="text-center fade-up"><span class="section-tag">Kitchen Build Package</span><h2 class="section-title">Everything in Your Kitchen Design Deliverable</h2></div>
+      <div class="includes-grid fade-up">
+        <div class="include-item"><div class="include-icon">✓</div><div><h4>Photorealistic Renderings</h4><p>Multiple angles of your kitchen remodel in lifelike 3D detail.</p></div></div>
+        <div class="include-item"><div class="include-icon">✓</div><div><h4>Cabinet Specifications</h4><p>Style, material, finish, and hardware for every cabinet in your kitchen layout.</p></div></div>
+        <div class="include-item"><div class="include-icon">✓</div><div><h4>Countertop & Backsplash</h4><p>Material selections — granite, quartz, marble, butcher block — with finish details.</p></div></div>
+        <div class="include-item"><div class="include-icon">✓</div><div><h4>Appliance Selections</h4><p>Refrigerator, range, dishwasher, hood — specified by make and model.</p></div></div>
+        <div class="include-item"><div class="include-icon">✓</div><div><h4>Lighting Plan</h4><p>Pendant, recessed, and under-cabinet lighting fixtures with placement specifications.</p></div></div>
+        <div class="include-item"><div class="include-icon">✓</div><div><h4>Flooring & Paint</h4><p>Flooring material, tile pattern, and wall paint colors with manufacturer codes.</p></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="cta-section">
+    <div class="container fade-up">
+      <span class="section-tag">Start Your Kitchen Remodel</span>
+      <h2 class="section-title">Ready to See Your Dream Kitchen?</h2>
+      <p class="section-subtitle mx-auto" style="margin-bottom:2rem">Book a free kitchen design consultation and see your remodel in photorealistic 3D before construction begins.</p>
+      <a href="https://www.spacebyday.com/contact" class="btn-primary">Schedule Kitchen Consultation →</a>
+    </div>
+  </section>
+</div>
+
+<!-- ── BATHROOM ── -->
+<div class="page" id="page-bathroom">
+  <div class="svc-hero">
+    <div class="svc-hero-bg"><img src="https://static.wixstatic.com/media/77d198_f7146c8eadde4b8ba084486dbfec548e~mv2.jpg/v1/fit/w_1200,h_600,q_90,enc_avif,quality_auto/77d198_f7146c8eadde4b8ba084486dbfec548e~mv2.jpg" alt="Modern bathroom renovation rendering – walk-in shower with marble tile in Chicago-area home" width="1200" height="600"></div>
+    <div class="svc-hero-content">
+      <div class="svc-breadcrumb"><a onclick="showPage('home')">Home</a> / <a onclick="showPage('home')">Services</a> / Bathroom Renovation Design</div>
+      <h1>Bathroom Renovation Design &amp; <em>3D Visualization</em></h1>
+      <p>Visualize your bathroom renovation in photorealistic 3D before a single tile is set. From primary bathroom suites to guest bath updates — we design bathroom remodels for homeowners in Lemont, IL and across the Chicago suburbs.</p>
+      <a href="https://www.spacebyday.com/contact" class="btn-primary">Book a Bathroom Design Consultation →</a>
+    </div>
+  </div>
+  <section class="svc-content" style="background:var(--white)">
+    <div class="container">
+      <div class="svc-content-grid">
+        <div class="svc-content-text">
+          <span class="section-tag">Bathroom Interior Design – Chicago Metro</span>
+          <h2>Bathroom Remodels Designed with Clarity & Confidence</h2>
+          <p>Bathrooms are one of the most complex rooms to remodel. Plumbing constraints, tile patterns, fixture placement, and ventilation all need to work together — and mistakes are expensive to fix once tile is set and plumbing is roughed in.</p>
+          <p>Our <strong>photorealistic 3D bathroom renderings</strong> let you see the finished result in detail: walk-in shower configuration, vanity style, tile layout, mirror and lighting placement, and flooring — all before your contractor begins demolition.</p>
+          <p>Whether you're designing a spa-inspired primary bathroom, updating a hall bath for resale value, or converting a tub to a walk-in shower, we deliver a complete design and specification package that your builder can price and construct with precision.</p>
+          <h2>What's Included in Your Bathroom Design Package</h2>
+          <p>A build-ready bathroom renovation package with every detail specified — so nothing is left to guesswork on the job site.</p>
+        </div>
+        <div>
+          <img class="svc-sidebar-img" src="https://static.wixstatic.com/media/77d198_3e2c0b38be8144c8a13639cc308c120e~mv2.jpg/v1/fit/w_800,h_600,q_90,enc_avif,quality_auto/77d198_3e2c0b38be8144c8a13639cc308c120e~mv2.jpg" alt="Bathroom design rendering – modern vanity with vessel sink and custom tile shower" width="800" height="600" loading="lazy" style="margin-bottom:1.5rem; border-radius:4px;">
+          <img class="svc-sidebar-img" src="https://static.wixstatic.com/media/77d198_0c830dd201844a1ea1775efed5e12069~mv2.jpg/v1/fit/w_800,h_600,q_90,enc_avif,quality_auto/77d198_0c830dd201844a1ea1775efed5e12069~mv2.jpg" alt="Bathroom renovation 3D rendering – freestanding tub with herringbone tile floor" width="800" height="600" loading="lazy" style="border-radius:4px;">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="svc-includes">
+    <div class="container">
+      <div class="text-center fade-up"><span class="section-tag">Bathroom Build Package</span><h2 class="section-title">Your Complete Bathroom Design Deliverable</h2></div>
+      <div class="includes-grid fade-up">
+        <div class="include-item"><div class="include-icon">✓</div><div><h4>3D Renderings</h4><p>Multiple angles of your finished bathroom in photorealistic detail.</p></div></div>
+        <div class="include-item"><div class="include-icon">✓</div><div><h4>Tile & Stone Specs</h4><p>Floor tile, shower tile, accent patterns — material, size, color, and layout.</p></div></div>
+        <div class="include-item"><div class="include-icon">✓</div><div><h4>Vanity & Countertop</h4><p>Vanity style, countertop material, sink type, and hardware selections.</p></div></div>
+        <div class="include-item"><div class="include-icon">✓</div><div><h4>Fixtures & Plumbing</h4><p>Faucet, showerhead, tub, toilet — specified by brand, model, and finish.</p></div></div>
+        <div class="include-item"><div class="include-icon">✓</div><div><h4>Lighting & Mirrors</h4><p>Vanity sconces, overhead lighting, and mirror size and placement.</p></div></div>
+        <div class="include-item"><div class="include-icon">✓</div><div><h4>Paint & Finishes</h4><p>Wall color, ceiling color, and any accent finishes with manufacturer codes.</p></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="cta-section">
+    <div class="container fade-up">
+      <span class="section-tag">Start Your Bathroom Renovation</span>
+      <h2 class="section-title">Ready to Visualize Your Bathroom Remodel?</h2>
+      <p class="section-subtitle mx-auto" style="margin-bottom:2rem">Book a free consultation and see your new bathroom in photorealistic 3D before construction.</p>
+      <a href="https://www.spacebyday.com/contact" class="btn-primary">Schedule Bathroom Consultation →</a>
+    </div>
+  </section>
+</div>
+
+<!-- ── BASEMENT ── -->
+<div class="page" id="page-basement">
+  <div class="svc-hero">
+    <div class="svc-hero-bg"><img src="https://static.wixstatic.com/media/77d198_ff3f23c6ffd64485bd4359648579bd09~mv2.jpg/v1/fit/w_1200,h_600,q_90,enc_avif,quality_auto/77d198_ff3f23c6ffd64485bd4359648579bd09~mv2.jpg" alt="Finished basement design rendering – modern entertainment space with bar and lounge area in Chicago-area home" width="1200" height="600"></div>
+    <div class="svc-hero-content">
+      <div class="svc-breadcrumb"><a onclick="showPage('home')">Home</a> / <a onclick="showPage('home')">Services</a> / Basement Finishing Design</div>
+      <h1>Basement Finishing Design &amp; <em>3D Visualization</em></h1>
+      <p>Transform your unfinished basement into a functional living space — and see it in photorealistic 3D before construction starts. We design basement finishes for homeowners in Lemont, IL and across the Chicago suburbs.</p>
+      <a href="https://www.spacebyday.com/contact" class="btn-primary">Book a Basement Design Consultation →</a>
+    </div>
+  </div>
+  <section class="svc-content" style="background:var(--white)">
+    <div class="container">
+      <div class="svc-content-grid">
+        <div class="svc-content-text">
+          <span class="section-tag">Basement Interior Design – Chicago Metro</span>
+          <h2>See Your Finished Basement Before You Build It</h2>
+          <p>Finishing a basement is one of the best ways to add usable square footage to your Chicago-area home. Whether you're creating a <strong>home theater, entertainment lounge, guest suite, home office, or kids' playroom</strong> — the design decisions are complex and the investment is significant.</p>
+          <p>Our <strong>photorealistic 3D basement renderings</strong> let you visualize the entire space: layout, lighting, built-ins, bar design, flooring, paint colors, and furnishings — all before your contractor begins framing.</p>
+          <p>We design basement finishes that maximize your layout, address Illinois-specific building code considerations (ceiling height, egress windows, HVAC routing), and deliver a complete specification package your builder can price and construct without ambiguity.</p>
+          <h2>What's Included in Your Basement Design Package</h2>
+          <p>A comprehensive build-ready package covering every finish, fixture, and design decision for your basement project.</p>
+        </div>
+        <div>
+          <img class="svc-sidebar-img" src="https://static.wixstatic.com/media/77d198_f108559fbc41490985ce7b00e42252fd~mv2.jpg/v1/fit/w_800,h_600,q_90,enc_avif,quality_auto/77d198_f108559fbc41490985ce7b00e42252fd~mv2.jpg" alt="Basement design rendering – media room with recessed lighting and built-in shelving" width="800" height="600" loading="lazy" style="margin-bottom:1.5rem; border-radius:4px;">
+          <img class="svc-sidebar-img" src="https://static.wixstatic.com/media/77d198_0b3172336eb84282be1fc934d051841d~mv2.jpg/v1/fit/w_800,h_600,q_90,enc_avif,quality_auto/77d198_0b3172336eb84282be1fc934d051841d~mv2.jpg" alt="Basement finishing 3D rendering – bar area with custom cabinetry and pendant lighting" width="800" height="600" loading="lazy" style="border-radius:4px;">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="svc-includes">
+    <div class="container">
+      <div class="text-center fade-up"><span class="section-tag">Basement Build Package</span><h2 class="section-title">Your Complete Basement Design Deliverable</h2></div>
+      <div class="includes-grid fade-up">
+        <div class="include-item"><div class="include-icon">✓</div><div><h4>3D Renderings</h4><p>Photorealistic views of every zone — lounge, bar, theater, office, guest suite.</p></div></div>
+        <div class="include-item"><div class="include-icon">✓</div><div><h4>Layout & Zoning</h4><p>Space planning for multiple use areas with traffic flow and furniture placement.</p></div></div>
+        <div class="include-item"><div class="include-icon">✓</div><div><h4>Built-In Specs</h4><p>Bar cabinets, entertainment centers, shelving — dimensions, materials, finishes.</p></div></div>
+        <div class="include-item"><div class="include-icon">✓</div><div><h4>Lighting Plan</h4><p>Recessed, pendant, track, and accent lighting — layered for ambiance and function.</p></div></div>
+        <div class="include-item"><div class="include-icon">✓</div><div><h4>Flooring & Walls</h4><p>Flooring type (LVP, tile, carpet), wall finishes, and accent treatments.</p></div></div>
+        <div class="include-item"><div class="include-icon">✓</div><div><h4>Paint & Finishes</h4><p>Complete color schedule with manufacturer codes for walls, trim, and ceiling.</p></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="cta-section">
+    <div class="container fade-up">
+      <span class="section-tag">Start Your Basement Finish</span>
+      <h2 class="section-title">Ready to Transform Your Basement?</h2>
+      <p class="section-subtitle mx-auto" style="margin-bottom:2rem">Book a free consultation and see your finished basement in photorealistic 3D before framing begins.</p>
+      <a href="https://www.spacebyday.com/contact" class="btn-primary">Schedule Basement Consultation →</a>
+    </div>
+  </section>
+</div>
+
+<!-- ── BEDROOM ── -->
+<div class="page" id="page-bedroom">
+  <div class="svc-hero">
+    <div class="svc-hero-bg"><img src="https://static.wixstatic.com/media/77d198_12fb498989c1488b85bea35cc9e2fd93~mv2.jpg/v1/fit/w_1200,h_600,q_90,enc_avif,quality_auto/77d198_12fb498989c1488b85bea35cc9e2fd93~mv2.jpg" alt="Modern bedroom interior design rendering – primary suite with custom headboard and warm lighting" width="1200" height="600"></div>
+    <div class="svc-hero-content">
+      <div class="svc-breadcrumb"><a onclick="showPage('home')">Home</a> / <a onclick="showPage('home')">Services</a> / Bedroom Interior Design</div>
+      <h1>Bedroom Interior Design &amp; <em>3D Visualization</em></h1>
+      <p>Design your perfect bedroom — from primary suites to guest rooms — and see it in photorealistic 3D before construction or furnishing begins. Serving homeowners in Lemont, IL and the Chicago metro area.</p>
+      <a href="https://www.spacebyday.com/contact" class="btn-primary">Book a Bedroom Design Consultation →</a>
+    </div>
+  </div>
+  <section class="svc-content" style="background:var(--white)">
+    <div class="container">
+      <div class="svc-content-grid">
+        <div class="svc-content-text">
+          <span class="section-tag">Bedroom Interior Design – Chicago Metro</span>
+          <h2>Create a Bedroom That Feels Like a Retreat</h2>
+          <p>Your bedroom should be a personal sanctuary — a space designed around how you rest, recharge, and start your day. Whether you're redesigning a <strong>primary suite with a custom closet and ensuite layout</strong>, refreshing a guest bedroom, or creating a calming kids' room, the design details matter.</p>
+          <p>Our <strong>photorealistic 3D bedroom renderings</strong> let you see the completed space — furniture placement, window treatments, wall finishes, lighting, headboard design, and color palette — so you can make confident decisions before purchasing a single item.</p>
+          <p>We design bedrooms that balance aesthetics with function: optimized layouts for furniture flow, layered lighting for different moods, and material selections that create the atmosphere you're looking for — whether that's warm and cozy, clean and minimal, or bold and modern.</p>
+        </div>
+        <div>
+          <img class="svc-sidebar-img" src="https://static.wixstatic.com/media/77d198_915ae9d413954db9ac323fa933329932~mv2.jpg/v1/fit/w_800,h_600,q_90,enc_avif,quality_auto/77d198_915ae9d413954db9ac323fa933329932~mv2.jpg" alt="Bedroom interior design rendering – modern guest room with neutral palette" width="800" height="600" loading="lazy" style="margin-bottom:1.5rem; border-radius:4px;">
+          <img class="svc-sidebar-img" src="https://static.wixstatic.com/media/77d198_6e99d875dafc4f749e3db69d16557a21~mv2.jpg/v1/fit/w_800,h_600,q_90,enc_avif,quality_auto/77d198_6e99d875dafc4f749e3db69d16557a21~mv2.jpg" alt="Bedroom design 3D rendering – cozy primary bedroom with layered lighting" width="800" height="600" loading="lazy" style="border-radius:4px;">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cta-section">
+    <div class="container fade-up">
+      <span class="section-tag">Design Your Perfect Bedroom</span>
+      <h2 class="section-title">Ready to See Your Dream Bedroom?</h2>
+      <p class="section-subtitle mx-auto" style="margin-bottom:2rem">Book a free consultation and visualize your bedroom design in photorealistic 3D.</p>
+      <a href="https://www.spacebyday.com/contact" class="btn-primary">Schedule Bedroom Consultation →</a>
+    </div>
+  </section>
+</div>
+
+<!-- ── LIVING ROOM ── -->
+<div class="page" id="page-livingroom">
+  <div class="svc-hero">
+    <div class="svc-hero-bg"><img src="https://static.wixstatic.com/media/77d198_70ab3144ffcf4adaad5562100f041aed~mv2.jpg/v1/fit/w_1200,h_600,q_90,enc_avif,quality_auto/77d198_70ab3144ffcf4adaad5562100f041aed~mv2.jpg" alt="Living room interior design rendering – open concept living space with modern furnishings in Chicago-area home" width="1200" height="600"></div>
+    <div class="svc-hero-content">
+      <div class="svc-breadcrumb"><a onclick="showPage('home')">Home</a> / <a onclick="showPage('home')">Services</a> / Living Room Design</div>
+      <h1>Living Room Interior Design &amp; <em>3D Visualization</em></h1>
+      <p>Reimagine your living room — and see the finished space in photorealistic 3D before making a single purchase or starting construction. Serving homeowners in Lemont, IL and across the Chicago metro area.</p>
+      <a href="https://www.spacebyday.com/contact" class="btn-primary">Book a Living Room Design Consultation →</a>
+    </div>
+  </div>
+  <section class="svc-content" style="background:var(--white)">
+    <div class="container">
+      <div class="svc-content-grid">
+        <div class="svc-content-text">
+          <span class="section-tag">Living Room Interior Design – Chicago Metro</span>
+          <h2>Living Room Design That Brings Your Vision to Life</h2>
+          <p>The living room is where daily life happens — where families gather, guests are entertained, and you unwind after a long day. Whether you're opening up a floor plan to create an <strong>open-concept living and dining space</strong>, adding a fireplace surround, or refreshing a dated family room, the design needs to balance aesthetics with how your family actually uses the space.</p>
+          <p>Our <strong>photorealistic 3D living room renderings</strong> let you see furniture arrangement, accent walls, built-in shelving, window treatments, lighting, and material selections — all coordinated and visualized before you commit.</p>
+          <p>We design living rooms that work for real life: optimized traffic flow, balanced proportions, intentional lighting layers, and material choices that hold up to daily use while looking beautiful.</p>
+        </div>
+        <div>
+          <img class="svc-sidebar-img" src="https://static.wixstatic.com/media/77d198_b84604746d2a4a17b9e1624858db281d~mv2.jpg/v1/fit/w_800,h_600,q_90,enc_avif,quality_auto/77d198_b84604746d2a4a17b9e1624858db281d~mv2.jpg" alt="Living room interior design 3D rendering – modern family room with accent wall and custom shelving" width="800" height="600" loading="lazy" style="border-radius:4px;">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cta-section">
+    <div class="container fade-up">
+      <span class="section-tag">Transform Your Living Room</span>
+      <h2 class="section-title">Ready to Redesign Your Living Room?</h2>
+      <p class="section-subtitle mx-auto" style="margin-bottom:2rem">Book a free consultation and see your living room transformation in photorealistic 3D.</p>
+      <a href="https://www.spacebyday.com/contact" class="btn-primary">Schedule Living Room Consultation →</a>
+    </div>
+  </section>
+</div>
+
+
+<!-- ═══════════════════════════════════════ -->
+<!-- ═══════════ BUILDERS PAGE ═══════════ -->
+<!-- ═══════════════════════════════════════ -->
+<div class="page" id="page-builders">
+  <div class="svc-hero">
+    <div class="svc-hero-bg"><img src="https://static.wixstatic.com/media/77d198_956d7a7208e6462ca211a371d0b34bed~mv2.jpg/v1/fill/w_1200,h_668,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/77d198_956d7a7208e6462ca211a371d0b34bed~mv2.jpg" alt="Kitchen rendering for builders – photorealistic 3D design visualization to help contractors close projects" width="1200" height="668"></div>
+    <div class="svc-hero-content">
+      <div class="svc-breadcrumb"><a onclick="showPage('home')">Home</a> / For Builders & Contractors</div>
+      <h1>Close More Projects with <em>Photorealistic Design</em></h1>
+      <p>We help contractors and remodelers in the Chicago area win jobs by giving homeowners something powerful: clarity. Partner with us to deliver pre-construction 3D renderings that reduce indecision, prevent change orders, and accelerate approvals.</p>
+      <a href="https://www.spacebyday.com/contact" class="btn-primary">Partner With Us →</a>
+    </div>
+  </div>
+
+  <section style="background:var(--white); padding:var(--sec-pad) 0;">
+    <div class="container">
+      <div class="text-center fade-up">
+        <span class="section-tag">Why Builders Partner with Us</span>
+        <h2 class="section-title">Design Support That Helps You Sell & Build</h2>
+        <p class="section-subtitle mx-auto">We act as your design arm — handling the aesthetic decisions so you can focus on construction.</p>
+      </div>
+      <div class="builder-values-grid fade-up">
+        <div class="builder-value">
+          <img class="builder-value-icon" src="https://static.wixstatic.com/media/77d198_e9d62f6b92fd498293767b733559911a~mv2.png/v1/fill/w_38,h_38,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/idea.png" alt="Helps homeowners say yes icon" width="40" height="40">
+          <h3>Homeowners Say Yes</h3><p>Photorealistic renderings remove the fear of the unknown — clients approve faster.</p>
+        </div>
+        <div class="builder-value">
+          <img class="builder-value-icon" src="https://static.wixstatic.com/media/77d198_c1400891304642859075a3f36c2ffac7~mv2.png/v1/fill/w_38,h_38,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/heart.png" alt="Reduces indecision icon" width="40" height="40">
+          <h3>Reduces Indecision</h3><p>Clients approve the look before you swing a hammer. No mid-project surprises.</p>
+        </div>
+        <div class="builder-value">
+          <img class="builder-value-icon" src="https://static.wixstatic.com/media/77d198_073a5847279e4ce581dbd24f8e2cf72e~mv2.png/v1/fill/w_38,h_38,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/user.png" alt="Creates shared vision icon" width="40" height="40">
+          <h3>Shared Vision</h3><p>Everyone — builder, homeowner, subcontractors — is on the same page from day one.</p>
+        </div>
+        <div class="builder-value">
+          <img class="builder-value-icon" src="https://static.wixstatic.com/media/77d198_a51714949b0345fcb1cfe424856e5add~mv2.png/v1/fill/w_38,h_38,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/reward.png" alt="Prevents scope creep icon" width="40" height="40">
+          <h3>Prevents Scope Creep</h3><p>Changes happen on paper, not during construction. Fewer change orders, better margins.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--bg); padding:var(--sec-pad) 0;">
+    <div class="container">
+      <div class="text-center fade-up">
+        <span class="section-tag">How the Partnership Works</span>
+        <h2 class="section-title">Our Builder Collaboration Process</h2>
+      </div>
+      <div class="builder-process fade-up">
+        <div class="bp-step"><div class="bp-num">1</div><h4>Collaborate Early</h4><p>Bring us in during the sales or pre-construction phase.</p></div>
+        <div class="bp-step"><div class="bp-num">2</div><h4>Client-Approved Design</h4><p>We get the homeowner to sign off on the look and feel.</p></div>
+        <div class="bp-step"><div class="bp-num">3</div><h4>Clear Documentation</h4><p>We provide the specs you need to bid accurately.</p></div>
+        <div class="bp-step"><div class="bp-num">4</div><h4>You Build</h4><p>You price and build from an approved design package.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--white); padding:var(--sec-pad) 0;">
+    <div class="container">
+      <div class="builder-split">
+        <div>
+          <span class="section-tag">Build-Ready Deliverables</span>
+          <h2 class="section-title" style="margin-bottom:1.5rem">We Help You Sell the Project. You Build It.</h2>
+          <p style="font-size:.95rem; color:var(--text-light); line-height:1.75; margin-bottom:1.5rem;">Every project includes a detailed specification package your team can use to price accurately and build with confidence.</p>
+          <div class="spec-preview">
+            <h4>Sample Spec Sheet — Project K-2024-01</h4>
+            <div class="spec-row"><span class="spec-label">Cabinetry</span><span class="spec-val">White Shaker, Maple</span></div>
+            <div class="spec-row"><span class="spec-label">Countertop</span><span class="spec-val">Butcher Block, Walnut</span></div>
+            <div class="spec-row"><span class="spec-label">Hardware</span><span class="spec-val">Brushed Brass Pulls</span></div>
+            <div class="spec-row"><span class="spec-label">Flooring</span><span class="spec-val">White Oak LVP, 7" Plank</span></div>
+            <div class="spec-row"><span class="spec-label">Lighting</span><span class="spec-val">Recessed + Pendant over Island</span></div>
+          </div>
+          <div class="perfect-for" style="margin-top:2rem;">
+            <span>Pre-Construction Sales</span>
+            <span>Design-Build Firms</span>
+            <span>Remodeling Bids</span>
+            <span>Value Engineering</span>
+          </div>
+        </div>
+        <img src="https://static.wixstatic.com/media/77d198_326904e630a441c5973e0e0c680269d6~mv2.png/v1/fill/w_624,h_384,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/kitchen%20for%20website.png" alt="Kitchen rendering with spec sheet – design build package for contractors in Chicago area" width="624" height="384" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-dark cta-section">
+    <div class="container fade-up">
+      <span class="section-tag">Let's Partner Up</span>
+      <h2 class="section-title">Stop Losing Bids to Indecision</h2>
+      <p class="section-subtitle mx-auto" style="margin-bottom:2rem">Start selling with clarity. Contact us to learn about our builder partnership program.</p>
+      <a href="https://www.spacebyday.com/contact" class="btn-primary">Contact Us to Partner →</a>
+    </div>
+  </section>
+</div>
+
+
+<!-- ═══════════════════════════════════════ -->
+<!-- ═══════════ PORTFOLIO PAGE ═══════════ -->
+<!-- ═══════════════════════════════════════ -->
+<div class="page" id="page-portfolio">
+  <div class="svc-hero" style="padding:clamp(3rem,6vw,5rem) 0;">
+    <div class="svc-hero-bg"><img src="https://static.wixstatic.com/media/77d198_0cf4666ee72e42928a744ff68046904c~mv2.jpg/v1/fill/w_1600,h_900,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/77d198_0cf4666ee72e42928a744ff68046904c~mv2.jpg" alt="Interior design portfolio – photorealistic 3D renderings by Space by Day Design in Chicago" width="1600" height="900"></div>
+    <div class="svc-hero-content">
+      <div class="svc-breadcrumb"><a onclick="showPage('home')">Home</a> / Design Portfolio</div>
+      <h1>Interior Design Portfolio — <em>3D Renderings</em></h1>
+      <p>Browse photorealistic 3D interior design renderings across kitchens, bathrooms, basements, bedrooms, and living rooms. Every project was designed for homeowners and builders in the Chicago metro area.</p>
+    </div>
+  </div>
+
+  <section style="background:var(--white); padding:var(--sec-pad) 0;">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Filter by Room Type</span>
+        <h2 class="section-title">Our Interior Design Projects</h2>
+      </div>
+      <div class="portfolio-filter">
+        <button class="filter-btn active" onclick="filterPortfolio('all',this)">All Projects</button>
+        <button class="filter-btn" onclick="filterPortfolio('basement',this)">Basement</button>
+        <button class="filter-btn" onclick="filterPortfolio('bathroom',this)">Bathroom</button>
+        <button class="filter-btn" onclick="filterPortfolio('bedroom',this)">Bedroom</button>
+        <button class="filter-btn" onclick="filterPortfolio('kitchen',this)">Kitchen</button>
+        <button class="filter-btn" onclick="filterPortfolio('livingroom',this)">Living Room</button>
+      </div>
+      <div class="portfolio-grid" id="portfolioGrid">
+        <!-- Basement -->
+        <div class="portfolio-item" data-cat="basement" onclick="openLightbox(this)"><img src="https://static.wixstatic.com/media/77d198_ff3f23c6ffd64485bd4359648579bd09~mv2.jpg/v1/fit/w_761,h_462,q_90,enc_avif,quality_auto/77d198_ff3f23c6ffd64485bd4359648579bd09~mv2.jpg" alt="Basement design rendering – modern entertainment space with custom bar area in Chicago-area home" loading="lazy"><div class="portfolio-item-overlay"><div class="portfolio-item-label"><span>Basement</span><h4>Entertainment Lounge</h4></div></div></div>
+        <div class="portfolio-item" data-cat="basement" onclick="openLightbox(this)"><img src="https://static.wixstatic.com/media/77d198_f108559fbc41490985ce7b00e42252fd~mv2.jpg/v1/fit/w_741,h_462,q_90,enc_avif,quality_auto/77d198_f108559fbc41490985ce7b00e42252fd~mv2.jpg" alt="Basement finishing rendering – media room with recessed lighting and built-in shelving" loading="lazy"><div class="portfolio-item-overlay"><div class="portfolio-item-label"><span>Basement</span><h4>Media Room</h4></div></div></div>
+        <div class="portfolio-item" data-cat="basement" onclick="openLightbox(this)"><img src="https://static.wixstatic.com/media/77d198_0b3172336eb84282be1fc934d051841d~mv2.jpg/v1/fit/w_671,h_462,q_90,enc_avif,quality_auto/77d198_0b3172336eb84282be1fc934d051841d~mv2.jpg" alt="Finished basement 3D rendering – bar area with pendant lighting and custom cabinetry" loading="lazy"><div class="portfolio-item-overlay"><div class="portfolio-item-label"><span>Basement</span><h4>Custom Bar Design</h4></div></div></div>
+        <div class="portfolio-item" data-cat="basement" onclick="openLightbox(this)"><img src="https://static.wixstatic.com/media/77d198_aa5a2096a74d43d8baca3f9ab888f211~mv2.jpg/v1/fit/w_725,h_462,q_90,enc_avif,quality_auto/77d198_aa5a2096a74d43d8baca3f9ab888f211~mv2.jpg" alt="Basement lounge rendering – comfortable seating area with warm lighting design" loading="lazy"><div class="portfolio-item-overlay"><div class="portfolio-item-label"><span>Basement</span><h4>Basement Lounge</h4></div></div></div>
+        <div class="portfolio-item" data-cat="basement" onclick="openLightbox(this)"><img src="https://static.wixstatic.com/media/77d198_256cf66236ef4b3ba65ca8601d560263~mv2.jpg/v1/fit/w_740,h_462,q_90,enc_avif,quality_auto/77d198_256cf66236ef4b3ba65ca8601d560263~mv2.jpg" alt="Basement game room rendering – recreational space with pool table and accent wall" loading="lazy"><div class="portfolio-item-overlay"><div class="portfolio-item-label"><span>Basement</span><h4>Game Room</h4></div></div></div>
+        <div class="portfolio-item" data-cat="basement" onclick="openLightbox(this)"><img src="https://static.wixstatic.com/media/77d198_dbd02fe5756d40e0956ac0997de377af~mv2.jpg/v1/fit/w_762,h_462,q_90,enc_avif,quality_auto/77d198_dbd02fe5756d40e0956ac0997de377af~mv2.jpg" alt="Basement home office rendering – dedicated work space with built-in desk in Chicago home" loading="lazy"><div class="portfolio-item-overlay"><div class="portfolio-item-label"><span>Basement</span><h4>Home Office</h4></div></div></div>
+        <div class="portfolio-item" data-cat="basement" onclick="openLightbox(this)"><img src="https://static.wixstatic.com/media/77d198_4572f0e795eb4b039979585f9c9e3aaf~mv2.jpg/v1/fit/w_741,h_462,q_90,enc_avif,quality_auto/77d198_4572f0e795eb4b039979585f9c9e3aaf~mv2.jpg" alt="Finished basement design – open-concept entertaining space with modern finishes" loading="lazy"><div class="portfolio-item-overlay"><div class="portfolio-item-label"><span>Basement</span><h4>Open Entertaining Space</h4></div></div></div>
+        <div class="portfolio-item" data-cat="basement" onclick="openLightbox(this)"><img src="https://static.wixstatic.com/media/77d198_b202f9a6fa974f429d59e07b4c9d7c1e~mv2.jpg/v1/fit/w_584,h_462,q_90,enc_avif,quality_auto/77d198_b202f9a6fa974f429d59e07b4c9d7c1e~mv2.jpg" alt="Basement guest suite rendering – bedroom and living area in finished basement" loading="lazy"><div class="portfolio-item-overlay"><div class="portfolio-item-label"><span>Basement</span><h4>Guest Suite</h4></div></div></div>
+        <div class="portfolio-item" data-cat="basement" onclick="openLightbox(this)"><img src="https://static.wixstatic.com/media/77d198_24a237efb91148bab24c6d7173feb375~mv2.jpg/v1/fit/w_740,h_462,q_90,enc_avif,quality_auto/77d198_24a237efb91148bab24c6d7173feb375~mv2.jpg" alt="Basement wine cellar rendering – custom wine storage with ambient lighting" loading="lazy"><div class="portfolio-item-overlay"><div class="portfolio-item-label"><span>Basement</span><h4>Wine Cellar</h4></div></div></div>
+        <!-- Bathroom -->
+        <div class="portfolio-item" data-cat="bathroom" onclick="openLightbox(this)"><img src="https://static.wixstatic.com/media/77d198_f7146c8eadde4b8ba084486dbfec548e~mv2.jpg/v1/fit/w_672,h_462,q_90,enc_avif,quality_auto/77d198_f7146c8eadde4b8ba084486dbfec548e~mv2.jpg" alt="Primary bathroom renovation rendering – walk-in shower with marble tile and glass enclosure" loading="lazy"><div class="portfolio-item-overlay"><div class="portfolio-item-label"><span>Bathroom</span><h4>Walk-In Shower Suite</h4></div></div></div>
+        <div class="portfolio-item" data-cat="bathroom" onclick="openLightbox(this)"><img src="https://static.wixstatic.com/media/77d198_3e2c0b38be8144c8a13639cc308c120e~mv2.jpg/v1/fit/w_655,h_462,q_90,enc_avif,quality_auto/77d198_3e2c0b38be8144c8a13639cc308c120e~mv2.jpg" alt="Bathroom design rendering – modern vanity with vessel sink and custom mirror" loading="lazy"><div class="portfolio-item-overlay"><div class="portfolio-item-label"><span>Bathroom</span><h4>Modern Vanity Design</h4></div></div></div>
+        <div class="portfolio-item" data-cat="bathroom" onclick="openLightbox(this)"><img src="https://static.wixstatic.com/media/77d198_0c830dd201844a1ea1775efed5e12069~mv2.jpg/v1/fit/w_729,h_462,q_90,enc_avif,quality_auto/77d198_0c830dd201844a1ea1775efed5e12069~mv2.jpg" alt="Bathroom renovation 3D rendering – freestanding tub with herringbone tile floor" loading="lazy"><div class="portfolio-item-overlay"><div class="portfolio-item-label"><span>Bathroom</span><h4>Freestanding Tub Suite</h4></div></div></div>
+        <div class="portfolio-item" data-cat="bathroom" onclick="openLightbox(this)"><img src="https://static.wixstatic.com/media/77d198_cc0fd4a385064777b0d6d9f12d9cb4fb~mv2.jpg/v1/fit/w_740,h_462,q_90,enc_avif,quality_auto/77d198_cc0fd4a385064777b0d6d9f12d9cb4fb~mv2.jpg" alt="Guest bathroom design rendering – clean minimal aesthetic with floating vanity" loading="lazy"><div class="portfolio-item-overlay"><div class="portfolio-item-label"><span>Bathroom</span><h4>Guest Bathroom Refresh</h4></div></div></div>
+        <!-- Bedroom -->
+        <div class="portfolio-item" data-cat="bedroom" onclick="openLightbox(this)"><img src="https://static.wixstatic.com/media/77d198_12fb498989c1488b85bea35cc9e2fd93~mv2.jpg/v1/fit/w_762,h_462,q_90,enc_avif,quality_auto/77d198_12fb498989c1488b85bea35cc9e2fd93~mv2.jpg" alt="Primary bedroom interior design rendering – custom headboard with warm accent lighting" loading="lazy"><div class="portfolio-item-overlay"><div class="portfolio-item-label"><span>Bedroom</span><h4>Primary Suite</h4></div></div></div>
+        <div class="portfolio-item" data-cat="bedroom" onclick="openLightbox(this)"><img src="https://static.wixstatic.com/media/77d198_915ae9d413954db9ac323fa933329932~mv2.jpg/v1/fit/w_696,h_462,q_90,enc_avif,quality_auto/77d198_915ae9d413954db9ac323fa933329932~mv2.jpg" alt="Guest bedroom design rendering – neutral tones with layered textiles and natural light" loading="lazy"><div class="portfolio-item-overlay"><div class="portfolio-item-label"><span>Bedroom</span><h4>Guest Bedroom</h4></div></div></div>
+        <div class="portfolio-item" data-cat="bedroom" onclick="openLightbox(this)"><img src="https://static.wixstatic.com/media/77d198_6e99d875dafc4f749e3db69d16557a21~mv2.jpg/v1/fit/w_812,h_462,q_90,enc_avif,quality_auto/77d198_6e99d875dafc4f749e3db69d16557a21~mv2.jpg" alt="Modern bedroom 3D rendering – minimalist design with custom closet system" loading="lazy"><div class="portfolio-item-overlay"><div class="portfolio-item-label"><span>Bedroom</span><h4>Modern Minimalist</h4></div></div></div>
+        <!-- Kitchen -->
+        <div class="portfolio-item" data-cat="kitchen" onclick="openLightbox(this)"><img src="https://static.wixstatic.com/media/77d198_ac7b04b63e8e40ed97bdc8e5deb34b5a~mv2.jpg/v1/fit/w_772,h_462,q_90,enc_avif,quality_auto/77d198_ac7b04b63e8e40ed97bdc8e5deb34b5a~mv2.jpg" alt="Kitchen remodel rendering – white shaker cabinets with butcher block island in Chicago home" loading="lazy"><div class="portfolio-item-overlay"><div class="portfolio-item-label"><span>Kitchen</span><h4>White Shaker Kitchen</h4></div></div></div>
+        <div class="portfolio-item" data-cat="kitchen" onclick="openLightbox(this)"><img src="https://static.wixstatic.com/media/77d198_da7cd9eeb2a643d3bb4fdef0685b2257~mv2.jpg/v1/fit/w_881,h_462,q_90,enc_avif,quality_auto/77d198_da7cd9eeb2a643d3bb4fdef0685b2257~mv2.jpg" alt="Open-concept kitchen design rendering – modern island layout with pendant lighting" loading="lazy"><div class="portfolio-item-overlay"><div class="portfolio-item-label"><span>Kitchen</span><h4>Open-Concept Kitchen</h4></div></div></div>
+        <!-- Living Room -->
+        <div class="portfolio-item" data-cat="livingroom" onclick="openLightbox(this)"><img src="https://static.wixstatic.com/media/77d198_70ab3144ffcf4adaad5562100f041aed~mv2.jpg/v1/fit/w_578,h_462,q_90,enc_avif,quality_auto/77d198_70ab3144ffcf4adaad5562100f041aed~mv2.jpg" alt="Living room interior design rendering – contemporary furnishings with accent wall and natural light" loading="lazy"><div class="portfolio-item-overlay"><div class="portfolio-item-label"><span>Living Room</span><h4>Contemporary Living</h4></div></div></div>
+        <div class="portfolio-item" data-cat="livingroom" onclick="openLightbox(this)"><img src="https://static.wixstatic.com/media/77d198_b84604746d2a4a17b9e1624858db281d~mv2.jpg/v1/fit/w_742,h_462,q_90,enc_avif,quality_auto/77d198_b84604746d2a4a17b9e1624858db281d~mv2.jpg" alt="Family room design rendering – cozy sectional arrangement with fireplace surround" loading="lazy"><div class="portfolio-item-overlay"><div class="portfolio-item-label"><span>Living Room</span><h4>Family Room Redesign</h4></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio SEO Content Block -->
+  <section style="background:var(--bg); padding:var(--sec-pad) 0;">
+    <div class="container" style="max-width:800px;">
+      <div class="text-center fade-up">
+        <span class="section-tag">About Our Interior Design Portfolio</span>
+        <h2 class="section-title">Photorealistic 3D Renderings for Every Room</h2>
+      </div>
+      <div class="fade-up" style="margin-top:2rem;">
+        <p style="font-size:.95rem; color:var(--text-light); line-height:1.75; margin-bottom:1rem;">Every image in our portfolio is a <strong>photorealistic 3D interior design rendering</strong> — created before any construction begins. These aren't photos of completed work; they're visualizations of what will be built. This is how we help homeowners and builders in the <strong>Chicago metro area</strong> make confident remodeling decisions.</p>
+        <p style="font-size:.95rem; color:var(--text-light); line-height:1.75; margin-bottom:1rem;">Our portfolio spans <strong>kitchen remodels, bathroom renovations, basement finishes, bedroom designs, and living room transformations</strong>. Each project includes detailed material specifications, fixture selections, and a complete build-ready package delivered to the homeowner's contractor.</p>
+        <p style="font-size:.95rem; color:var(--text-light); line-height:1.75; margin-bottom:2rem;">Based in <strong>Lemont, Illinois</strong>, we serve homeowners and builders across the Chicago suburbs including Naperville, Downers Grove, Hinsdale, Orland Park, and surrounding communities.</p>
+        <div class="text-center">
+          <a href="https://www.spacebyday.com/contact" class="btn-primary">Start Your Project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════ LIGHTBOX ═══════════ -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
+  <button class="lightbox-nav lightbox-prev" onclick="navLightbox(-1)" aria-label="Previous">&#8249;</button>
+  <img id="lightboxImg" src="" alt="Interior design rendering detail view">
+  <button class="lightbox-nav lightbox-next" onclick="navLightbox(1)" aria-label="Next">&#8250;</button>
+</div>
+
+<!-- ═══════════ FOOTER (shared) ═══════════ -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Space by Day Design</div>
+      <p class="footer-desc">Interior design studio in Lemont, IL serving the Chicago metro area. Photorealistic 3D renderings for homeowners and builders.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Design Services</h4>
+        <ul>
+          <li><a onclick="showPage('kitchen')">Kitchen Remodel Design</a></li>
+          <li><a onclick="showPage('bathroom')">Bathroom Renovation Design</a></li>
+          <li><a onclick="showPage('basement')">Basement Finishing Design</a></li>
+          <li><a onclick="showPage('bedroom')">Bedroom Interior Design</a></li>
+          <li><a onclick="showPage('livingroom')">Living Room Design</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a onclick="showPage('builders')">For Builders</a></li>
+          <li><a onclick="showPage('portfolio')">Portfolio</a></li>
+          <li><a href="https://www.spacebyday.com/about">About Us</a></li>
+          <li><a href="https://www.spacebyday.com/blog">Design Journal</a></li>
+          <li><a href="https://www.spacebyday.com/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Service Areas</h4>
+        <ul>
+          <li><a>Lemont, IL</a></li>
+          <li><a>Chicago Suburbs</a></li>
+          <li><a>Chicago Metro Area</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2025 Space by Day Design · Interior Designer Lemont & Chicago, IL · Powered by <a href="https://www.Dorado360.com" style="color:var(--accent-light)">Dorado360</a>
+  </div>
+</footer>
+
+<script>
+// ── PAGE ROUTING ──
+function showPage(page) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const target = document.getElementById('page-' + page);
+  if (target) { target.classList.add('active'); }
+  window.scrollTo({ top: 0, behavior: 'instant' });
+  document.getElementById('navLinks').classList.remove('open');
+  // Re-observe animations
+  document.querySelectorAll('.fade-up').forEach(el => { el.classList.remove('visible'); observer.observe(el); });
+}
+
+// ── MOBILE NAV ──
+document.getElementById('mobileToggle').addEventListener('click', () => {
+  document.getElementById('navLinks').classList.toggle('open');
+});
+
+// ── NAV SCROLL ──
+window.addEventListener('scroll', () => {
+  document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 20);
+});
+
+// ── FADE ANIMATIONS ──
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+}, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// ── PORTFOLIO FILTER ──
+function filterPortfolio(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.portfolio-item').forEach(item => {
+    item.style.display = (cat === 'all' || item.dataset.cat === cat) ? '' : 'none';
+  });
+}
+
+// ── LIGHTBOX ──
+let lightboxItems = [];
+let lightboxIdx = 0;
+function openLightbox(el) {
+  const visible = [...document.querySelectorAll('.portfolio-item')].filter(i => i.style.display !== 'none');
+  lightboxItems = visible.map(i => i.querySelector('img').src.replace(/w_\d+/, 'w_1400'));
+  lightboxIdx = visible.indexOf(el);
+  document.getElementById('lightboxImg').src = lightboxItems[lightboxIdx];
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function navLightbox(dir) {
+  lightboxIdx = (lightboxIdx + dir + lightboxItems.length) % lightboxItems.length;
+  document.getElementById('lightboxImg').src = lightboxItems[lightboxIdx];
+}
+document.getElementById('lightbox').addEventListener('click', e => { if (e.target === e.currentTarget) closeLightbox(); });
+document.addEventListener('keydown', e => {
+  if (!document.getElementById('lightbox').classList.contains('open')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') navLightbox(-1);
+  if (e.key === 'ArrowRight') navLightbox(1);
+});
+</script>
+</body>
+</html>

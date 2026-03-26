@@ -1,0 +1,21 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (if ever needed for build tools)
+node_modules/
+package-lock.json
+
+# Netlify local
+.netlify/
+
+# Logs
+*.log

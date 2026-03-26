@@ -1,0 +1,16 @@
+{
+  "name": "Space by Day Design",
+  "short_name": "Space by Day",
+  "description": "Interior design studio in Lemont, IL serving the Chicago metro area.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F6F3EE",
+  "theme_color": "#9B7E5E",
+  "icons": [
+    {
+      "src": "https://static.wixstatic.com/media/77d198_bc7dc8dd7fd24f80ac5a0b7dd0573ad4~mv2.png/v1/fill/w_42,h_40,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/image%20(2)%20no%20background_PNG.png",
+      "sizes": "42x40",
+      "type": "image/png"
+    }
+  ]
+}
