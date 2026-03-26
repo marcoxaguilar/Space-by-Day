@@ -1,4 +1,8 @@
-# Clean URL redirects — trailing slashes
+# Blog clean URLs
+/blog/kitchen-remodel-cost-chicago      /blog-kitchen-remodel-cost-chicago.html      200
+/blog/what-are-3d-interior-renderings   /blog-what-are-3d-interior-renderings.html   200
+
+# Service page clean URLs
 /services/kitchen-remodel-design    /services/kitchen-remodel-design.html    200
 /services/bathroom-renovation-design /services/bathroom-renovation-design.html 200
 /services/basement-finishing-design  /services/basement-finishing-design.html  200
@@ -10,6 +14,6 @@
 /contact                             /contact.html                             200
 
 # Old Wix URL redirects (301 for SEO juice)
-/process                             /services/kitchen-remodel-design.html     301
-/copy-of-residential                 /for-builders.html                        301
-/copy-of-for-builders                /portfolio.html                           301
+/process                             /                                         301
+/copy-of-residential                 /                                         301
+/copy-of-for-builders                /                                         301

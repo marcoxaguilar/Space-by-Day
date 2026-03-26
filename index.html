@@ -248,6 +248,21 @@
     .perfect-for { display:flex; flex-wrap:wrap; gap:.75rem; margin-top:1.5rem; }
     .perfect-for span { padding:8px 18px; border:1px solid var(--border); border-radius:2px; font-size:.82rem; font-weight:500; letter-spacing:.04em; text-transform:uppercase; color:var(--text-light); }
 
+    /* ══════ BLOG CARDS ══════ */
+    .blog-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:2rem; margin-top:3rem; }
+    .blog-card { overflow:hidden; border-radius:4px; background:var(--white); border:1px solid var(--border); transition:transform .3s,box-shadow .3s; }
+    .blog-card:hover { transform:translateY(-4px); box-shadow:0 16px 48px rgba(0,0,0,.07); }
+    .blog-card img { width:100%; height:220px; object-fit:cover; transition:transform .5s; }
+    .blog-card:hover img { transform:scale(1.03); }
+    .blog-card-img { overflow:hidden; }
+    .blog-card-body { padding:1.75rem; }
+    .blog-card-meta { font-size:.72rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin-bottom:.6rem; }
+    .blog-card-body h3 { font-family:var(--font-d); font-size:1.35rem; font-weight:500; line-height:1.3; margin-bottom:.75rem; color:var(--text); }
+    .blog-card-body p { font-size:.9rem; color:var(--text-light); line-height:1.65; margin-bottom:1.25rem; }
+    .blog-read-more { display:inline-flex; align-items:center; gap:6px; font-size:.8rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); transition:gap .25s; }
+    .blog-read-more:hover { gap:10px; }
+    .blog-read-more svg { width:14px; height:14px; fill:none; stroke:currentColor; stroke-width:2; }
+
     /* ── ANIMATIONS ── */
     .fade-up { opacity:0; transform:translateY(28px); transition:opacity .7s ease,transform .7s ease; }
     .fade-up.visible { opacity:1; transform:translateY(0); }
@@ -275,6 +290,7 @@
       .about-img, .svc-sidebar-img { order:-1; aspect-ratio:16/10; }
       .deliver-grid { grid-template-columns:1fr 1fr; }
       .portfolio-grid { grid-template-columns:repeat(2,1fr); }
+      .blog-grid { grid-template-columns:1fr; }
     }
     @media (max-width:600px) {
       .services-grid, .builder-values-grid, .builder-process { grid-template-columns:1fr; }
@@ -307,6 +323,7 @@
       </li>
       <li><a onclick="showPage('builders')">For Builders</a></li>
       <li><a onclick="showPage('portfolio')">Portfolio</a></li>
+      <li><a onclick="showPage('home');setTimeout(()=>document.getElementById('blog-section').scrollIntoView({behavior:'smooth'}),100)">Journal</a></li>
       <li><a onclick="showPage('home');setTimeout(()=>document.getElementById('about').scrollIntoView({behavior:'smooth'}),100)">About</a></li>
       <li><a onclick="showPage('home');setTimeout(()=>document.getElementById('contact').scrollIntoView({behavior:'smooth'}),100)" class="nav-cta">Book Consultation</a></li>
     </ul>
@@ -478,6 +495,41 @@
         <a onclick="showPage('basement')">Basement Finishing</a>
         <a onclick="showPage('bedroom')">Bedroom Design</a>
         <a onclick="showPage('livingroom')">Living Room Design</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog / Journal -->
+  <section style="background:var(--white); padding:var(--sec-pad) 0;" id="blog-section">
+    <div class="container">
+      <div class="text-center fade-up">
+        <span class="section-tag">From the Journal</span>
+        <h2 class="section-title">Design Tips & Remodeling Insights</h2>
+        <p class="section-subtitle mx-auto">Practical advice for homeowners planning a kitchen, bathroom, or basement remodel in the Chicago area.</p>
+      </div>
+      <div class="blog-grid">
+        <a href="/blog-kitchen-remodel-cost-chicago.html" class="blog-card fade-up" style="text-decoration:none; color:inherit;">
+          <div class="blog-card-img">
+            <img src="https://static.wixstatic.com/media/77d198_ac7b04b63e8e40ed97bdc8e5deb34b5a~mv2.jpg/v1/fit/w_800,h_440,q_90,enc_avif,quality_auto/77d198_ac7b04b63e8e40ed97bdc8e5deb34b5a~mv2.jpg" alt="Kitchen remodel cost guide Chicago 2026 – white shaker kitchen rendering" width="800" height="440" loading="lazy">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">March 2026 · Kitchen Design · 8 min read</div>
+            <h3>How Much Does a Kitchen Remodel Really Cost in Chicago?</h3>
+            <p>A 2026 pricing guide with real cost tiers, budget breakdowns, and the one strategy that can save you thousands before construction starts.</p>
+            <span class="blog-read-more">Read Article <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a href="/blog-what-are-3d-interior-renderings.html" class="blog-card fade-up" style="text-decoration:none; color:inherit; transition-delay:.1s;">
+          <div class="blog-card-img">
+            <img src="https://static.wixstatic.com/media/77d198_ff3f23c6ffd64485bd4359648579bd09~mv2.jpg/v1/fit/w_800,h_440,q_90,enc_avif,quality_auto/77d198_ff3f23c6ffd64485bd4359648579bd09~mv2.jpg" alt="What are 3D interior renderings – finished basement visualization" width="800" height="440" loading="lazy">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">March 2026 · Design Tips · 7 min read</div>
+            <h3>What Are 3D Interior Renderings & Why You Need One Before Remodeling</h3>
+            <p>How photorealistic visualization prevents costly mistakes and gives Chicago homeowners confidence before construction begins.</p>
+            <span class="blog-read-more">Read Article <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
       </div>
     </div>
   </section>
@@ -937,6 +989,8 @@
           <li><a onclick="showPage('portfolio')">Portfolio</a></li>
           <li><a href="https://www.spacebyday.com/about">About Us</a></li>
           <li><a href="https://www.spacebyday.com/blog">Design Journal</a></li>
+          <li><a href="/blog-kitchen-remodel-cost-chicago.html">Kitchen Remodel Costs</a></li>
+          <li><a href="/blog-what-are-3d-interior-renderings.html">What Are 3D Renderings?</a></li>
           <li><a href="https://www.spacebyday.com/contact">Contact</a></li>
         </ul>
       </div>
